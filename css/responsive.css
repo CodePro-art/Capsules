@@ -1,0 +1,42 @@
+@media only screen and (max-width: 700px) {
+  th {
+    font-size: 11px;
+  }
+  tr {
+    font-size: 13px;
+  }
+}
+@media only screen and (max-width: 690px) {
+  th {
+    font-size: 11px;
+  }
+  tr {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  th {
+    font-size: 10px;
+  }
+  tr {
+    font-size: 11px;
+  }
+}
+@media only screen and (max-width: 650px) {
+  th {
+    font-size: 9px;
+  }
+  tr {
+    font-size: 10px;
+  }
+}
+@media only screen and (max-width: 580px) {
+  th {
+    font-size: 8px;
+  }
+  tr {
+    font-size: 9px;
+  }
+}
+

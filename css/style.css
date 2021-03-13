@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* GENERAL STYLING */
+body {
+  display: flex;
+  justify-content: center;
+  font-family: 'Josefin Slab', serif;
+  background: linear-gradient(to right, #25c481, #25b7c4);
+}
+
+i {
+  cursor: pointer;
+}
+
+/* TABLE */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  background-color: rgba(174, 215, 243, 0.3);
+  border-radius: 5px;
+  border: 1px solid rgba(112, 255, 255, 0.76);
+  box-shadow: 0 0 5px #000;
+}
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background-color: rgba(170, 248, 183, 0.25);
+  border-bottom: 2px solid rgba(85, 255, 212, 0.5);
+}
+
+h3{  
+  margin: 5px 0px 0px 0px;
+  border-radius: 5px;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  color: rgb(31, 173, 238);
+}
+
+td {
+  border-bottom: 1px dotted #ccc; 
+}
+
+th {
+  background-color: rgba(171, 170, 248, 0.2);
+  color: #000;
+  font-size: 12px;
+  padding: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 1px solid rgb(54, 255, 228);
+}
+th:hover {
+  background-color: rgba(91, 181, 255, 0.5);
+  
+}
+
+tr {
+  text-align: center;
+  font-size: 14px;
+}
+
+input,select {
+  outline: 0;
+  padding: 3px;
+  margin: 5px;
+  border: none;
+  box-shadow: 0 0 1px #333;
+  color: #666;
+  border-radius: 2px;
+}
+
+.table-sortable th:not([data-sortable="false"]) {
+  cursor: pointer;
+}
+
+.table-sortable th:not([data-sortable="false"])::after {
+  content: " " attr(data-sort-direction);
+}
+
+.table-sortable th[data-sortable="false"] {
+  background-color: lightcoral;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+  outline: 0;
+}
+
+.fa-pen,.fa-trash {
+  color: #333;
+  transition: .3s;
+}
+
+.fa-pen:hover {
+  color: rgba(0, 217, 255, 0.8);
+  text-shadow: -1px 0 #fff, 0 1px #fff, 1px 0 #fff, 0 -1px #fff;
+}
+
+.fa-trash:hover {
+  color: rgba(255, 0, 0, 0.8);
+  text-shadow: -1px 0 rgb(255, 208, 0), 0 1px rgb(255, 208, 0), 1px 0 rgb(255, 208, 0), 0 -1px rgb(255, 208, 0);
+}
+
+.fa-pen:active {
+  color: rgba(0, 162, 255, 0.8);
+}
+
+.fa-trash:active {
+  color: rgb(255, 166, 0);
+  text-shadow: -1px 0 rgba(255, 0, 0, 0.8), 0 1px rgba(255, 0, 0, 0.8), 1px 0 rgba(255, 0, 0, 0.8), 0 -1px rgba(255, 0, 0, 0.8);
+}
+
+.editable {
+  color: aliceblue;   
+}
